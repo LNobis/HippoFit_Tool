@@ -1,0 +1,108 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- <script src="jquery-3.3.1.min.js"></script>  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <meta name="description" content="Brain volume by age percentile calculator">
+    <meta name="keywords" content="brain volume, age, percentile, normative">
+    <meta name="authors" content="Lisa Nobis, Sanjay Manohar, Masud Husain">
+    <title>UK Biobank Brain volume nomograms | Background </title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  
+    <style>
+
+    </style>
+      
+
+<body>
+
+<nav class="navbar navbar-expand-md navbar-light fixed-top" style="background-color:white;">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contact.html">Contact</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="disclaimer.html">Disclaimer</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<main role="main">
+
+  <!-- Main jumbotron for a primary marketing message or call to action -->
+  <div class="jumbotron">
+    <div class="container">   
+        <div class="row">
+            <div class="col-md-6">
+                <BR><BR>
+                <h1>Instructions and Background</h1>
+                <BR>
+                <p class="text-justify" >
+                Measurement of hippocampal volume has proven useful across a range of research studies to track progression in several brain disorders, most notably in Alzheimer’s disease (AD). 
+                For example, an objective evaluation of a patient’s hippocampal volume status may provide important information that can assist diagnosis or risk stratification of AD. However, as 
+                a reduction of hippocampal volume is also observed in healthy ageing, clinicians and researchers require access to age-related normative percentiles to reliably categorise a patient’s 
+                hippocampal volume as being pathologically small. <BR><BR>
+                Here we analysed effects of age, sex, and hemisphere on the hippocampus in over 19,700 generally 
+                healthy participants in the UK Biobank (find our publication <a href="https://www.sciencedirect.com/science/article/pii/S2213158219302542?via%3Dihub"> here</a>).  <BR> <BR>
+                The UK Biobank cohort includes over 500,000 participants aged 40-80 years, of which a subset 
+                of 100,000 participants will receive brain imaging. Both the acquisition and analysis of MRI are standardised across the scanning sites 
+                according to publicly available protocols designed by the UK Biobank Imaging Working Group (<a href="www.ukbiobank.ac.uk/expert-working-groups">www.ukbiobank.ac.uk/expert-working-groups</a>). Based on these normative values for hippocampal and total grey matter volume
+                over age, this automated percentile estimation tool calculates an individual’s hippocampal volume status, for reference in clinical and research settings.
+                </p>
+                <p class="text-justify" >
+                Most precise percentile estimations will be obtained by using the same <a href="pipeline.html">preprocessing pipeline</a> on the original MR image as has been used in the preparation
+                of the normative MR images from UK Biobank.
+                </p>
+            </div>
+ 
+        <div class="col-md-6" >
+            <BR><BR><BR>
+            <p>
+                <BR><BR><BR>
+                <ul style="list-style-type:none">
+                <li><b>Required values to calculate someone's brain volume percentile:</b> <BR><BR>
+                <li>Age in years (52-71 years for females, 53-72 years for males)<BR><BR>
+                <li>Sex<BR><BR>
+                <li class="text-justify" >Hemisphere (whether the volume estimate is taken from the left or right hemisphere)<BR><BR>
+                <li class="text-justify" >Head size correction (whether or not correction using head scaling from preprocessing pipeline should be applied). If head size correction should be applied, the value for head scaling derived from pipeline has to be entered<BR><BR>
+                <li class="text-justify" >Brain volume in mm3 (currently only hippocampal volume)
+                </ul>
+                </p>
+                <BR><BR><BR>
+        </div>
+        </div>
+    </div>
+</div>
+
+    </main>
+        
+    <footer class="container">
+      <hr>
+      <p class="text-center"> &copy; Lisa Nobis, Sanjay Manohar, Masud Husain 2019 - Version 1.4, Last edited: 29.01.2020</p>
+    </footer>
+        
+            <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    </body>
+
+</html>
