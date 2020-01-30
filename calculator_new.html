@@ -78,7 +78,7 @@
     <br><br>
 
     <a href="index.html">
-      <img id=logo src="./img/HippoLogo.svg" class="img-fluid"  alt="Website Logo" style="margin-left:10%;"/>
+      <img id=logo src="./HippoLogo.svg" class="img-fluid"  alt="Website Logo" style="margin-left:10%;"/>
     </a>
 
   </div> <!-- end jumbotron -->
@@ -446,44 +446,44 @@
                   if( hemisphere ==0) { 
                   var q  = quantiles_female[hemisphere][row];
                   image_val0 = image_val0_fem_left;
-                  $("#output_image").attr("src", "./img/nomogram_fem_left.svg"); 
+                  $("#output_image").attr("src", "./nomogram_fem_left.svg"); 
       
                   } else if( hemisphere ==1) { 
                   var q  = quantiles_female[hemisphere][row];
                   image_val0 = image_val0_fem_right;
-                  $("#output_image").attr("src", "./img/nomogram_fem_right.svg"); 
+                  $("#output_image").attr("src", "./nomogram_fem_right.svg"); 
                   }}
               else if(headSizeCorr == 0 && gender == 1) {
                   if ( hemisphere ==0) {
                   var q = quantiles_male[hemisphere][row];
                   image_val0 = image_val0_male_left;
-                  $("#output_image").attr("src", "./img/nomogram_male_left.svg"); 
+                  $("#output_image").attr("src", "./nomogram_male_left.svg"); 
       
                   } else if(hemisphere ==1) {
                   var q = quantiles_male[hemisphere][row];
                   image_val0 = image_val0_male_right;
-                  $("#output_image").attr("src", "./img/nomogram_male_right.svg"); 
+                  $("#output_image").attr("src", "./nomogram_male_right.svg"); 
                   }}
               else if(headSizeCorr == 1 && gender == 0) {
                   if( hemisphere ==0) { 
                   var q  = quantiles_female_corr[hemisphere][row];
                   image_val0 = image_val0_fem_left;
-                  $("#output_image").attr("src", "./img/nomogram_fem_corr_left.svg"); 
+                  $("#output_image").attr("src", "./nomogram_fem_corr_left.svg"); 
       
                   } else if( hemisphere ==1) { 
                   var q  = quantiles_female_corr[hemisphere][row];
                   image_val0 = image_val0_fem_right;
-                  $("#output_image").attr("src", "./img/nomogram_fem_corr_right.svg"); 
+                  $("#output_image").attr("src", "./nomogram_fem_corr_right.svg"); 
                   }}
               else if(headSizeCorr == 1 && gender == 1) {
                   if ( hemisphere ==0) {
                   var q = quantiles_male_corr[hemisphere][row];
                   image_val0 = image_val0_male_left;
-                  $("#output_image").attr("src", "./img/nomogram_male_corr_left.svg"); 
+                  $("#output_image").attr("src", "./nomogram_male_corr_left.svg"); 
                   } else if(hemisphere ==1) {
                   var q = quantiles_male_corr[hemisphere][row];
                   image_val0 = image_val0_male_right;
-                  $("#output_image").attr("src", "./img/nomogram_male_corr_right.svg"); 
+                  $("#output_image").attr("src", "./nomogram_male_corr_right.svg"); 
                   }}
               
       
